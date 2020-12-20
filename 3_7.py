@@ -11,5 +11,12 @@ def Fib(n):
         el1, el2 = el2, sum
     return sum
 
+def Fib_recursion(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    return Fib(n-1) + Fib(n-2)
+
 for n in range(1, 10):
-    print(n,'--->', Fib(n))
+    print(n,'--->', Fib_recursion(n))
