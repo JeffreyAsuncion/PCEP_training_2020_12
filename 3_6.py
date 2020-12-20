@@ -1,0 +1,15 @@
+def Factorial(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+    product = 1
+
+    # range is exclusive on the end, so we need to add 1
+    for i in range(2, n+1):
+        product *= i
+
+    return product
+
+for n in range(1, 6):
+    print(n, Factorial(n))
